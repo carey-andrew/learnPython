@@ -23,3 +23,12 @@ price=2.5
 inventory=100
 is_in_inventory=True
 print(item_name, price, inventory)"""
+a=10
+b=3
+print('addition : ', a+b)
+print('subtraction : ', a-b)
+print('multiplication : ', a*b)
+print('division (float): ', a/b)
+print('division (floor): ', a//b)
+print('modulus : ', a%b) # remainder
+print('exponent : ', a**b) # power
