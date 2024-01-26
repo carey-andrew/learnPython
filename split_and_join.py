@@ -1,5 +1,5 @@
-msg = 'Welcome to python'
-csv = 'Eric,John,Michael,Terry,Graham'
+
+csv = 'Eric,John,Michael,Graham:Terry,Graham'
 friends_list = ['Eric','John','Michael','Terry','Graham']
 print(msg.split())
 print(msg.split(' '))
