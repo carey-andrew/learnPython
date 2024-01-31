@@ -5,7 +5,7 @@
 # formula is (c * 9/5) + 32 = f
 
 first_number = float(input('Enter first number: '))
-operator = input('Enter operator: ')
+operator = input('Enter operator (+,-,*,/): ')
 second_number = float(input('Enter second number: '))
 
 if operator == '+':
@@ -21,5 +21,5 @@ else:
 
 celsius = float(input('Enter temperature in celsius: ')) 
 fahrenheit = (celsius * 9/5) + 32
-print(fahrenheit)
+print(f'{celsius} is equivalent to {fahrenheit} fahrenheit')
 
