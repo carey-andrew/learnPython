@@ -20,3 +20,5 @@ my_other_list = [['car',4,65],['dog',2,3],['add',3,4],['bee',1,2]]
 print(sorted(my_new_list))
 #sorts by the first element in the list
 print(sorted(my_new_list, key=abs)) #sorts by the absolute value
+#using lambda function
+print(sorted(my_other_list, key=lambda item :item[2]))# where index is the index of the element to sort by
