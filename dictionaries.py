@@ -30,4 +30,16 @@ print(movie.items())
 #looping through a dictionary
 for key, value in movie.items():
     print(key, value)#remember year was popped out
-    
+
+people = {}
+people1= {}
+people2 = {}
+#method 1 update dict
+people.update(movie)
+
+print(sorted(people))
+#method 2 comprehension
+for groups in movie: people1.update(groups)
+#method 3 - unpacking
+people2 = {**movie}
+print(sorted(people2))
