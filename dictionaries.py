@@ -40,6 +40,11 @@ people.update(movie)
 print(sorted(people))
 #method 2 comprehension
 for groups in movie: people1.update(groups)
+print(people1)
 #method 3 - unpacking
-people2 = {**movie}
+people2 = {**movie}#unpacking key
 print(sorted(people2))
+
+#unpacking doesn't sort in the order of the keys
+#finding the sum of all the values in a dictionary
+print(sum(movie.values()))
