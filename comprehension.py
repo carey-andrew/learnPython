@@ -30,3 +30,29 @@ print(new_list)
 new_list = [(letter,num) for letter in 'spam' for num in range(4)]
 
 #comprehension is like destructuring in JS
+
+#dictionary comprehension
+movies = ["And Now for Something Completely Different", "Monty Python and the Holy Grail", "Monty Python's Life of Brian", "Monty Python Live at the Hollywood Bowl", "Monty Python's The Meaning of Life", "Monty Python Live (Mostly)"]
+year = [1971, 1975, 1979, 1982, 1983, 2014]
+names = ['John', 'Eric', 'Michael', 'Terry G', 'Terry J', 'Graham']
+
+print(list(zip(movies,year)))
+
+new_dict = dict()
+for movie, yr in zip(movies,year):
+    new_dict[movie] = yr
+print(new_dict)
+
+#as comprehension
+new_dict = {movie:yr for movie,yr in zip(movies,year)}
+print(new_dict)
+#year needed to be changed to yr because year is a built-in function and int was not iterable
+#can add if statements
+new_dict = {movie:yr for movie,yr in zip(movies,year) if yr > 1980}
+print(new_dict)
+#startswith() is a string method
+new_dict = {movie:yr for movie,yr in zip(movies,year) if movie.startswith('Monty')}
+print(new_dict)
+
+n1 = [(name,movie,yr) for name in names for movie,yr in zip(movies,year) if yr < 1981]
+print(n1)
