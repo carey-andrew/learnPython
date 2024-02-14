@@ -21,7 +21,7 @@ for q in range(num_questions):
     else:
         print("Incorrect!")
         
-    print(f'Thank you for playing! Your final score is {user_score} out of {num_questions} {round(user_score/num_questions*100)}%')
+print(f'Thank you for playing! Your final score is {user_score} out of {num_questions} {round(user_score/num_questions*100)}%')
 # create 2 randoms numbers and calculate the answer
 #show user the question and ask for the answer
 #capture answer and check if correct
